@@ -35,15 +35,15 @@
             this.EmployeeIdLabel = new System.Windows.Forms.Label();
             this.TotalHoursWorkedLabel = new System.Windows.Forms.Label();
             this.TotalMonthlySalesLabel = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.EmployeeNameTextBox = new System.Windows.Forms.TextBox();
+            this.EmployeeIDTextBox = new System.Windows.Forms.TextBox();
+            this.TotalHoursWorkedTextbox = new System.Windows.Forms.TextBox();
+            this.TotalMonthlySalesTextBox = new System.Windows.Forms.TextBox();
+            this.SalesBonusTextBox = new System.Windows.Forms.TextBox();
             this.SalesBonusLabel = new System.Windows.Forms.Label();
             this.LanguageGroupBox = new System.Windows.Forms.GroupBox();
-            this.EnglishRadioButton = new System.Windows.Forms.RadioButton();
             this.FrenchButton = new System.Windows.Forms.RadioButton();
+            this.EnglishRadioButton = new System.Windows.Forms.RadioButton();
             this.LanguageGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -118,46 +118,46 @@
             this.TotalMonthlySalesLabel.TabIndex = 6;
             this.TotalMonthlySalesLabel.Text = "Total Monthly Sales";
             // 
-            // textBox1
+            // EmployeeNameTextBox
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(386, 214);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(371, 50);
-            this.textBox1.TabIndex = 7;
+            this.EmployeeNameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmployeeNameTextBox.Location = new System.Drawing.Point(386, 214);
+            this.EmployeeNameTextBox.Name = "EmployeeNameTextBox";
+            this.EmployeeNameTextBox.Size = new System.Drawing.Size(371, 50);
+            this.EmployeeNameTextBox.TabIndex = 7;
             // 
-            // textBox2
+            // EmployeeIDTextBox
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(386, 288);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(371, 50);
-            this.textBox2.TabIndex = 8;
+            this.EmployeeIDTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmployeeIDTextBox.Location = new System.Drawing.Point(386, 288);
+            this.EmployeeIDTextBox.Name = "EmployeeIDTextBox";
+            this.EmployeeIDTextBox.Size = new System.Drawing.Size(371, 50);
+            this.EmployeeIDTextBox.TabIndex = 8;
             // 
-            // textBox3
+            // TotalHoursWorkedTextbox
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(386, 362);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(371, 50);
-            this.textBox3.TabIndex = 9;
+            this.TotalHoursWorkedTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalHoursWorkedTextbox.Location = new System.Drawing.Point(386, 362);
+            this.TotalHoursWorkedTextbox.Name = "TotalHoursWorkedTextbox";
+            this.TotalHoursWorkedTextbox.Size = new System.Drawing.Size(371, 50);
+            this.TotalHoursWorkedTextbox.TabIndex = 9;
             // 
-            // textBox4
+            // TotalMonthlySalesTextBox
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(386, 436);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(371, 50);
-            this.textBox4.TabIndex = 10;
+            this.TotalMonthlySalesTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalMonthlySalesTextBox.Location = new System.Drawing.Point(386, 436);
+            this.TotalMonthlySalesTextBox.Name = "TotalMonthlySalesTextBox";
+            this.TotalMonthlySalesTextBox.Size = new System.Drawing.Size(371, 50);
+            this.TotalMonthlySalesTextBox.TabIndex = 10;
             // 
-            // textBox5
+            // SalesBonusTextBox
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(389, 514);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(371, 50);
-            this.textBox5.TabIndex = 12;
+            this.SalesBonusTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SalesBonusTextBox.Location = new System.Drawing.Point(389, 514);
+            this.SalesBonusTextBox.Name = "SalesBonusTextBox";
+            this.SalesBonusTextBox.ReadOnly = true;
+            this.SalesBonusTextBox.Size = new System.Drawing.Size(371, 50);
+            this.SalesBonusTextBox.TabIndex = 12;
             // 
             // SalesBonusLabel
             // 
@@ -180,17 +180,6 @@
             this.LanguageGroupBox.TabStop = false;
             this.LanguageGroupBox.Text = "Languages";
             // 
-            // EnglishRadioButton
-            // 
-            this.EnglishRadioButton.AutoSize = true;
-            this.EnglishRadioButton.Location = new System.Drawing.Point(7, 37);
-            this.EnglishRadioButton.Name = "EnglishRadioButton";
-            this.EnglishRadioButton.Size = new System.Drawing.Size(114, 29);
-            this.EnglishRadioButton.TabIndex = 0;
-            this.EnglishRadioButton.TabStop = true;
-            this.EnglishRadioButton.Text = "English";
-            this.EnglishRadioButton.UseVisualStyleBackColor = true;
-            // 
             // FrenchButton
             // 
             this.FrenchButton.AutoSize = true;
@@ -202,18 +191,29 @@
             this.FrenchButton.Text = "Français";
             this.FrenchButton.UseVisualStyleBackColor = true;
             // 
+            // EnglishRadioButton
+            // 
+            this.EnglishRadioButton.AutoSize = true;
+            this.EnglishRadioButton.Location = new System.Drawing.Point(7, 37);
+            this.EnglishRadioButton.Name = "EnglishRadioButton";
+            this.EnglishRadioButton.Size = new System.Drawing.Size(114, 29);
+            this.EnglishRadioButton.TabIndex = 0;
+            this.EnglishRadioButton.TabStop = true;
+            this.EnglishRadioButton.Text = "English";
+            this.EnglishRadioButton.UseVisualStyleBackColor = true;
+            // 
             // MailOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(814, 681);
             this.Controls.Add(this.LanguageGroupBox);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.SalesBonusTextBox);
             this.Controls.Add(this.SalesBonusLabel);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.TotalMonthlySalesTextBox);
+            this.Controls.Add(this.TotalHoursWorkedTextbox);
+            this.Controls.Add(this.EmployeeIDTextBox);
+            this.Controls.Add(this.EmployeeNameTextBox);
             this.Controls.Add(this.TotalMonthlySalesLabel);
             this.Controls.Add(this.TotalHoursWorkedLabel);
             this.Controls.Add(this.EmployeeIdLabel);
@@ -240,11 +240,11 @@
         private System.Windows.Forms.Label EmployeeIdLabel;
         private System.Windows.Forms.Label TotalHoursWorkedLabel;
         private System.Windows.Forms.Label TotalMonthlySalesLabel;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox EmployeeNameTextBox;
+        private System.Windows.Forms.TextBox EmployeeIDTextBox;
+        private System.Windows.Forms.TextBox TotalHoursWorkedTextbox;
+        private System.Windows.Forms.TextBox TotalMonthlySalesTextBox;
+        private System.Windows.Forms.TextBox SalesBonusTextBox;
         private System.Windows.Forms.Label SalesBonusLabel;
         private System.Windows.Forms.GroupBox LanguageGroupBox;
         private System.Windows.Forms.RadioButton FrenchButton;
