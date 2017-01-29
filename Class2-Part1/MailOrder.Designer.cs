@@ -44,7 +44,9 @@
             this.LanguageGroupBox = new System.Windows.Forms.GroupBox();
             this.FrenchButton = new System.Windows.Forms.RadioButton();
             this.EnglishRadioButton = new System.Windows.Forms.RadioButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.LanguageGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // NextButton
@@ -77,6 +79,7 @@
             this.CalculateButton.TabIndex = 2;
             this.CalculateButton.Text = "Calculate";
             this.CalculateButton.UseVisualStyleBackColor = true;
+            this.CalculateButton.Click += new System.EventHandler(this.CalculateButton_Click);
             // 
             // EmployeeNameLabel
             // 
@@ -152,7 +155,7 @@
             // 
             // SalesBonusTextBox
             // 
-            this.SalesBonusTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SalesBonusTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SalesBonusTextBox.Location = new System.Drawing.Point(389, 514);
             this.SalesBonusTextBox.Name = "SalesBonusTextBox";
             this.SalesBonusTextBox.ReadOnly = true;
@@ -162,10 +165,10 @@
             // SalesBonusLabel
             // 
             this.SalesBonusLabel.AutoSize = true;
-            this.SalesBonusLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SalesBonusLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SalesBonusLabel.Location = new System.Drawing.Point(15, 514);
             this.SalesBonusLabel.Name = "SalesBonusLabel";
-            this.SalesBonusLabel.Size = new System.Drawing.Size(232, 44);
+            this.SalesBonusLabel.Size = new System.Drawing.Size(243, 44);
             this.SalesBonusLabel.TabIndex = 11;
             this.SalesBonusLabel.Text = "Sales Bonus";
             // 
@@ -173,6 +176,7 @@
             // 
             this.LanguageGroupBox.Controls.Add(this.FrenchButton);
             this.LanguageGroupBox.Controls.Add(this.EnglishRadioButton);
+            this.LanguageGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LanguageGroupBox.Location = new System.Drawing.Point(496, 42);
             this.LanguageGroupBox.Name = "LanguageGroupBox";
             this.LanguageGroupBox.Size = new System.Drawing.Size(264, 138);
@@ -185,7 +189,7 @@
             this.FrenchButton.AutoSize = true;
             this.FrenchButton.Location = new System.Drawing.Point(7, 72);
             this.FrenchButton.Name = "FrenchButton";
-            this.FrenchButton.Size = new System.Drawing.Size(126, 29);
+            this.FrenchButton.Size = new System.Drawing.Size(136, 33);
             this.FrenchButton.TabIndex = 1;
             this.FrenchButton.TabStop = true;
             this.FrenchButton.Text = "Français";
@@ -194,19 +198,30 @@
             // EnglishRadioButton
             // 
             this.EnglishRadioButton.AutoSize = true;
+            this.EnglishRadioButton.Checked = true;
             this.EnglishRadioButton.Location = new System.Drawing.Point(7, 37);
             this.EnglishRadioButton.Name = "EnglishRadioButton";
-            this.EnglishRadioButton.Size = new System.Drawing.Size(114, 29);
+            this.EnglishRadioButton.Size = new System.Drawing.Size(124, 33);
             this.EnglishRadioButton.TabIndex = 0;
             this.EnglishRadioButton.TabStop = true;
             this.EnglishRadioButton.Text = "English";
             this.EnglishRadioButton.UseVisualStyleBackColor = true;
+            this.EnglishRadioButton.CheckedChanged += new System.EventHandler(this.EnglishRadioButton_CheckedChanged);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(23, 42);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(356, 138);
+            this.pictureBox1.TabIndex = 14;
+            this.pictureBox1.TabStop = false;
             // 
             // MailOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(814, 681);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.LanguageGroupBox);
             this.Controls.Add(this.SalesBonusTextBox);
             this.Controls.Add(this.SalesBonusLabel);
@@ -226,6 +241,7 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.LanguageGroupBox.ResumeLayout(false);
             this.LanguageGroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -249,6 +265,7 @@
         private System.Windows.Forms.GroupBox LanguageGroupBox;
         private System.Windows.Forms.RadioButton FrenchButton;
         private System.Windows.Forms.RadioButton EnglishRadioButton;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

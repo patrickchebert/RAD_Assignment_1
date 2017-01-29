@@ -26,5 +26,18 @@ namespace Class2_Part1
         {
 
         }
+
+        private void CalculateButton_Click(object sender, EventArgs e)
+        {
+            double HoursWorked = Int32.Parse(TotalHoursWorkedTextbox.Text);
+            double GrossSales = Int32.Parse(TotalMonthlySalesTextBox.Text);
+            double SalesBonus = HoursWorked / 160 * 0.02 * GrossSales;
+            SalesBonusTextBox.Text = SalesBonus.ToString();
+        }
+
+        private void EnglishRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
