@@ -22,9 +22,11 @@ namespace Class2_Part1
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void NextButton_Click(object sender, EventArgs e)
         {
-
+            EmployeeNameTextBox.Text = "";
+            EmployeeIDTextBox.Text = "";
+            TotalHoursWorkedTextbox.Text = "";
         }
 
         private void CalculateButton_Click(object sender, EventArgs e)
@@ -37,7 +39,20 @@ namespace Class2_Part1
 
         private void EnglishRadioButton_CheckedChanged(object sender, EventArgs e)
         {
+            EmployeeNameLabel.Text = "Employee Name";
+            EmployeeIdLabel.Text = "Employee ID";
+            TotalHoursWorkedLabel.Text = "Total Hours Worked";
+            TotalMonthlySalesLabel.Text = "Total Monthly Sales";
+            SalesBonusLabel.Text = "Sales Bonus";
+        }
 
+        private void FrenchButton_CheckedChanged(object sender, EventArgs e)
+        {
+            EmployeeNameLabel.Text = "Nom de l'employé";
+            EmployeeIdLabel.Text = "ID employé";
+            TotalHoursWorkedLabel.Text = "Heures travaillées";
+            TotalMonthlySalesLabel.Text = "Ventes mensuelles";
+            SalesBonusLabel.Text = "Bonus de vente";
         }
     }
 }

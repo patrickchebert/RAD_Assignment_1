@@ -44,9 +44,9 @@
             this.LanguageGroupBox = new System.Windows.Forms.GroupBox();
             this.FrenchButton = new System.Windows.Forms.RadioButton();
             this.EnglishRadioButton = new System.Windows.Forms.RadioButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.LogoBox = new System.Windows.Forms.PictureBox();
             this.LanguageGroupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LogoBox)).BeginInit();
             this.SuspendLayout();
             // 
             // NextButton
@@ -58,7 +58,7 @@
             this.NextButton.TabIndex = 0;
             this.NextButton.Text = "Next";
             this.NextButton.UseVisualStyleBackColor = true;
-            this.NextButton.Click += new System.EventHandler(this.button1_Click);
+            this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
             // 
             // PrintButton
             // 
@@ -194,6 +194,7 @@
             this.FrenchButton.TabStop = true;
             this.FrenchButton.Text = "Français";
             this.FrenchButton.UseVisualStyleBackColor = true;
+            this.FrenchButton.CheckedChanged += new System.EventHandler(this.FrenchButton_CheckedChanged);
             // 
             // EnglishRadioButton
             // 
@@ -208,20 +209,23 @@
             this.EnglishRadioButton.UseVisualStyleBackColor = true;
             this.EnglishRadioButton.CheckedChanged += new System.EventHandler(this.EnglishRadioButton_CheckedChanged);
             // 
-            // pictureBox1
+            // LogoBox
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(23, 42);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(356, 138);
-            this.pictureBox1.TabIndex = 14;
-            this.pictureBox1.TabStop = false;
+            this.LogoBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.LogoBox.Image = global::Class2_Part1.Properties.Resources.BonusCalculator;
+            this.LogoBox.Location = new System.Drawing.Point(23, 42);
+            this.LogoBox.Margin = new System.Windows.Forms.Padding(0);
+            this.LogoBox.Name = "LogoBox";
+            this.LogoBox.Size = new System.Drawing.Size(350, 100);
+            this.LogoBox.TabIndex = 14;
+            this.LogoBox.TabStop = false;
             // 
             // MailOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(814, 681);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.LogoBox);
             this.Controls.Add(this.LanguageGroupBox);
             this.Controls.Add(this.SalesBonusTextBox);
             this.Controls.Add(this.SalesBonusLabel);
@@ -237,11 +241,11 @@
             this.Controls.Add(this.PrintButton);
             this.Controls.Add(this.NextButton);
             this.Name = "MailOrder";
-            this.Text = "Form1";
+            this.Text = "Bonus Calculator";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.LanguageGroupBox.ResumeLayout(false);
             this.LanguageGroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LogoBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -265,7 +269,7 @@
         private System.Windows.Forms.GroupBox LanguageGroupBox;
         private System.Windows.Forms.RadioButton FrenchButton;
         private System.Windows.Forms.RadioButton EnglishRadioButton;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox LogoBox;
     }
 }
 
